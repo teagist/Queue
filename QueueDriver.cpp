@@ -98,7 +98,7 @@ void choose(Queue<T>& myQueue)
 				cout << endl;
 				if (myQueue.Peek())
 				{
-					cout << "The top of the stack is: " << myQueue.Peek();
+					cout << "The front of the queue is: " << myQueue.Peek();
 					cout << endl;
 				}
 				system("pause");
