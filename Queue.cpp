@@ -144,7 +144,7 @@ QNode<T>* Queue<T>::Search(T item) const
 	if(success == false)
 	{
 		cerr << item << " was not found." << endl;
-        return NULL;
+        	return NULL;
 	}
 
     return temp;
@@ -178,7 +178,7 @@ void Queue<T>::Print() const
 		while (temp != NULL)
 		{
 			cout << ", " << temp->data;	
-        	temp= temp->next;
+        		temp= temp->next;
 		}
 		cout << endl << "-------------" << endl;
 	}
@@ -195,7 +195,7 @@ template<class T>
 Queue<T>::~Queue()
 {
     while(head != NULL)
-	{
+    {
         QNode<T>* temp = head->next;
         delete head;
         head = temp;
